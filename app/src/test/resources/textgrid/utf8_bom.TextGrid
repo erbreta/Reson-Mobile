@@ -1,0 +1,55 @@
+﻿File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.5 
+xmax = 2.5 
+tiers? <exists> 
+size = 4 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phonetics" 
+        xmin = 0.5 
+        xmax = 2.5 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0.5 
+            xmax = 1 
+            text = "He said: ""مرحبا"" [maɾħabaː]" 
+        intervals [2]:
+            xmin = 1 
+            xmax = 1.8 
+            text = "Vowel [iː] with combining diacritic é
+! inside label" 
+        intervals [3]:
+            xmin = 1.8 
+            xmax = 2.5 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0.5 
+        xmax = 2.5 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0.5 
+            xmax = 2.5 
+            text = "كلمة" 
+    item [3]:
+        class = "TextTier" 
+        name = "notes" 
+        xmin = 0.5 
+        xmax = 2.5 
+        points: size = 2 
+        points [1]:
+            number = 0.8 
+            mark = "Quote ""mark"" test" 
+        points [2]:
+            number = 2 
+            mark = "عربية" 
+    item [4]:
+        class = "TextTier" 
+        name = "empty points" 
+        xmin = 0.5 
+        xmax = 2.5 
+        points: size = 0 

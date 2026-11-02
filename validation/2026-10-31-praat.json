@@ -1,0 +1,637 @@
+{
+  "parselmouth": "0.4.7",
+  "fixtures": "Deterministic synthetic signals; no human speech corpus",
+  "criteria": {
+    "clean_pitch": "median relative difference <2%, octave errors <1%, voicing agreement >95% away from edges",
+    "stable_formants": "median per-formant difference <100 Hz or 10% of reference, whichever is larger",
+    "dynamic_intensity": "correlation >0.95 after accounting for reference offset; compare residuals",
+    "pulses": "no silence/noise markers; nearest Praat timing median <15% of period on clean periodic signals"
+  },
+  "results": {
+    "dynamic_vowel": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 97,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": 0.23053391108808796,
+        "median_relative_error_percent": 0.19211188898668752,
+        "octave_error_proportion": 0.0
+      },
+      "formants": {
+        "5500": [
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 524.2014951201737,
+            "praat_median_hz": 524.2882515704796,
+            "median_abs_hz": 0.46839016798486455
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 1482.4800745943749,
+            "praat_median_hz": 1482.6048661059071,
+            "median_abs_hz": 0.7826175455653583
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 112,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 2541.4515513973893,
+            "praat_median_hz": 2541.357175667148,
+            "median_abs_hz": 1.454957077684412
+          }
+        ],
+        "5000": [
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 518.7997785742624,
+            "praat_median_hz": 518.876970850257,
+            "median_abs_hz": 0.3333451551352482
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 1471.6360390194689,
+            "praat_median_hz": 1471.9026610017672,
+            "median_abs_hz": 0.6146867797185678
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 111,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 2531.645059401238,
+            "praat_median_hz": 2531.557470347319,
+            "median_abs_hz": 0.560563691567495
+          }
+        ]
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.99198743890528,
+        "median_shape_residual_db": 0.021493036839700608,
+        "correlation": 0.9999992289436086
+      },
+      "pulses": {
+        "kotlin_count": 115,
+        "praat_count": 119,
+        "median_nearest_praat_ms": 0.006779588648364587,
+        "p95_nearest_praat_ms": 0.0068865357895572105,
+        "outside_praat_voicing": 0
+      }
+    },
+    "five_formant_vowel": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 97,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": 0.2510015367935665,
+        "median_relative_error_percent": 0.20916780303405005,
+        "octave_error_proportion": 0.0
+      },
+      "formants": {
+        "5500": [
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 541.7728843157884,
+            "praat_median_hz": 541.7686699948079,
+            "median_abs_hz": 1.0817778369582811
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 1509.3165250957209,
+            "praat_median_hz": 1509.339571486359,
+            "median_abs_hz": 0.19606976251679953
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 2478.358161267599,
+            "praat_median_hz": 2478.431516397898,
+            "median_abs_hz": 0.49038393671821723
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 3490.746433391247,
+            "praat_median_hz": 3490.6301644818677,
+            "median_abs_hz": 0.6956799423046505
+          }
+        ],
+        "5000": [
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 539.2917429966348,
+            "praat_median_hz": 540.0510454197653,
+            "median_abs_hz": 0.9265632972503681
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 1507.8842517068697,
+            "praat_median_hz": 1508.6589457688967,
+            "median_abs_hz": 0.7624406961774639
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 2486.0119346715987,
+            "praat_median_hz": 2485.846893155457,
+            "median_abs_hz": 0.22107454696015338
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 111,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          }
+        ]
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.9807904169881,
+        "median_shape_residual_db": 0.006141658321752175,
+        "correlation": null
+      },
+      "pulses": {
+        "kotlin_count": 115,
+        "praat_count": 119,
+        "median_nearest_praat_ms": 0.008745617650240955,
+        "p95_nearest_praat_ms": 0.009416171447190758,
+        "outside_praat_voicing": 0
+      }
+    },
+    "long_vowel": {
+      "seconds": 180.0,
+      "pitch": {
+        "kotlin_voiced": 17997,
+        "kotlin_frames": 17997,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": 0.23091831690649656,
+        "median_relative_error_percent": 0.19243148568324905,
+        "octave_error_proportion": 0.0
+      },
+      "formants": {
+        "5500": [
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 524.1368378624936,
+            "praat_median_hz": 524.1910121254639,
+            "median_abs_hz": 0.5042405316956433
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 1482.2232674190495,
+            "praat_median_hz": 1482.4263749090496,
+            "median_abs_hz": 0.9229831785477245
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 112,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 2541.858876476507,
+            "praat_median_hz": 2541.704088984075,
+            "median_abs_hz": 1.5986413369057573
+          }
+        ],
+        "5000": [
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 518.7941255164889,
+            "praat_median_hz": 518.818419449662,
+            "median_abs_hz": 0.3381503465914193
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 1471.69456476165,
+            "praat_median_hz": 1471.7952622315206,
+            "median_abs_hz": 0.6203680998810341
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 111,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 2531.663126001414,
+            "praat_median_hz": 2531.584638105253,
+            "median_abs_hz": 0.6472169439002755
+          }
+        ]
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.98097461556567,
+        "median_shape_residual_db": 0.005870869442816229,
+        "correlation": null
+      },
+      "pulses": {
+        "kotlin_count": 21595,
+        "praat_count": 21599,
+        "median_nearest_praat_ms": 0.011986170932232199,
+        "p95_nearest_praat_ms": 0.07242425341189573,
+        "outside_praat_voicing": 0
+      }
+    },
+    "noisy_vowel": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 97,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": 0.22994926346389377,
+        "median_relative_error_percent": 0.1916134822712227,
+        "octave_error_proportion": 0.0
+      },
+      "formants": {
+        "5500": [
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 540.1066887258,
+            "praat_median_hz": 542.9695805348967,
+            "median_abs_hz": 2.6540715088847833
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 1509.3002184367992,
+            "praat_median_hz": 1513.8201938026846,
+            "median_abs_hz": 4.348590248144433
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 2491.018163901152,
+            "praat_median_hz": 2505.665338948882,
+            "median_abs_hz": 14.524874948054958
+          },
+          {
+            "paired_frames": 81,
+            "total_frames": 112,
+            "kotlin_median_hz": 3639.1103307225144,
+            "praat_median_hz": 3753.289527374899,
+            "median_abs_hz": 98.58391365238185
+          }
+        ],
+        "5000": [
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 532.2117127502307,
+            "praat_median_hz": 534.3827291068303,
+            "median_abs_hz": 2.0998574490068904
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 1497.5514226481675,
+            "praat_median_hz": 1501.3525153042592,
+            "median_abs_hz": 3.6559789995965275
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 2462.3374988697524,
+            "praat_median_hz": 2473.5865991178666,
+            "median_abs_hz": 9.127021539755788
+          },
+          {
+            "paired_frames": 2,
+            "total_frames": 111,
+            "kotlin_median_hz": 3662.2710793080505,
+            "praat_median_hz": 3633.4154021024574,
+            "median_abs_hz": 58.82355459962537
+          }
+        ]
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.97921809989698,
+        "median_shape_residual_db": 0.004887570622898352,
+        "correlation": null
+      },
+      "pulses": {
+        "kotlin_count": 115,
+        "praat_count": 119,
+        "median_nearest_praat_ms": 0.01214670849947197,
+        "p95_nearest_praat_ms": 0.03044489538420736,
+        "outside_praat_voicing": 0
+      }
+    },
+    "short": {
+      "seconds": 0.001,
+      "kotlin_frames": 0,
+      "praat": "Too short for default pitch/formant/intensity windows"
+    },
+    "silence": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 0,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": null,
+        "median_relative_error_percent": null,
+        "octave_error_proportion": null
+      },
+      "pulses": {
+        "kotlin_count": 0,
+        "praat_count": 0,
+        "median_nearest_praat_ms": null,
+        "p95_nearest_praat_ms": null,
+        "outside_praat_voicing": 0
+      }
+    },
+    "tone440": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 97,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": 0.12403868965765241,
+        "median_relative_error_percent": 0.028190698582873874,
+        "octave_error_proportion": 0.0
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.97883032047044,
+        "median_shape_residual_db": 0.001174460281660572,
+        "correlation": null
+      },
+      "pulses": {
+        "kotlin_count": 422,
+        "praat_count": 429,
+        "median_nearest_praat_ms": 1.1315250784527664,
+        "p95_nearest_praat_ms": 1.131601689231937,
+        "outside_praat_voicing": 0
+      }
+    },
+    "tone80": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 97,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": 0.012140202820461354,
+        "median_relative_error_percent": 0.015173609950296558,
+        "octave_error_proportion": 0.0
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.96738676499545,
+        "median_shape_residual_db": 0.008256268382083931,
+        "correlation": null
+      },
+      "pulses": {
+        "kotlin_count": 76,
+        "praat_count": 80,
+        "median_nearest_praat_ms": 6.239669829855576,
+        "p95_nearest_praat_ms": 6.239755926423901,
+        "outside_praat_voicing": 0
+      }
+    },
+    "unvoiced_noise": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 0,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": null,
+        "median_relative_error_percent": null,
+        "octave_error_proportion": null
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.97408768298193,
+        "median_shape_residual_db": 0.01831579709170228,
+        "correlation": 0.9839524352002923
+      },
+      "pulses": {
+        "kotlin_count": 0,
+        "praat_count": 0,
+        "median_nearest_praat_ms": null,
+        "p95_nearest_praat_ms": null,
+        "outside_praat_voicing": 0
+      }
+    },
+    "voiced_transition": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 51,
+        "kotlin_frames": 97,
+        "voicing_agreement": 0.9882352941176471,
+        "median_abs_hz": 0.23091831690649656,
+        "median_relative_error_percent": 0.19243148568324905,
+        "octave_error_proportion": 0.0
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.98097450458005,
+        "median_shape_residual_db": 0.0065035826400787755,
+        "correlation": 0.9969828957571151
+      },
+      "pulses": {
+        "kotlin_count": 55,
+        "praat_count": 60,
+        "median_nearest_praat_ms": 0.006589638992415825,
+        "p95_nearest_praat_ms": 0.006622286082252904,
+        "outside_praat_voicing": 0
+      }
+    },
+    "vowel120": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 97,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": 0.23091831690649656,
+        "median_relative_error_percent": 0.19243148568324905,
+        "octave_error_proportion": 0.0
+      },
+      "formants": {
+        "5500": [
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 524.1368378624936,
+            "praat_median_hz": 524.1991567529066,
+            "median_abs_hz": 0.5067258163925317
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 1482.2232674190495,
+            "praat_median_hz": 1482.4387424539073,
+            "median_abs_hz": 0.9035609119438277
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 112,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 2541.858876476507,
+            "praat_median_hz": 2541.6977785178947,
+            "median_abs_hz": 1.6210165987879464
+          }
+        ],
+        "5000": [
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 518.7941255164889,
+            "praat_median_hz": 518.8231697540832,
+            "median_abs_hz": 0.3400050244472368
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 1471.69456476165,
+            "praat_median_hz": 1471.789836022264,
+            "median_abs_hz": 0.6207281871772921
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 111,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 2531.663126001414,
+            "praat_median_hz": 2531.5873040334436,
+            "median_abs_hz": 0.6466138055716328
+          }
+        ]
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.98097664173662,
+        "median_shape_residual_db": 0.005868589311731398,
+        "correlation": null
+      },
+      "pulses": {
+        "kotlin_count": 115,
+        "praat_count": 119,
+        "median_nearest_praat_ms": 0.006549463434923908,
+        "p95_nearest_praat_ms": 0.006618721250073456,
+        "outside_praat_voicing": 0
+      }
+    },
+    "vowel220": {
+      "seconds": 1.0,
+      "pitch": {
+        "kotlin_voiced": 97,
+        "kotlin_frames": 97,
+        "voicing_agreement": 1.0,
+        "median_abs_hz": 0.8444853874267153,
+        "median_relative_error_percent": 0.3838461485317769,
+        "octave_error_proportion": 0.0
+      },
+      "formants": {
+        "5500": [
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 527.4145324225908,
+            "praat_median_hz": 527.6122968336463,
+            "median_abs_hz": 0.13816776087350036
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 1513.3845557437435,
+            "praat_median_hz": 1513.3775208750058,
+            "median_abs_hz": 0.1588202548080062
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 112,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          },
+          {
+            "paired_frames": 112,
+            "total_frames": 112,
+            "kotlin_median_hz": 2530.7368281454956,
+            "praat_median_hz": 2530.6959295129373,
+            "median_abs_hz": 0.5494782474397653
+          }
+        ],
+        "5000": [
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 520.7925787757487,
+            "praat_median_hz": 521.0157091402065,
+            "median_abs_hz": 0.19761116152790237
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 1510.9366819817692,
+            "praat_median_hz": 1511.0659079062532,
+            "median_abs_hz": 0.2554274269241432
+          },
+          {
+            "paired_frames": 0,
+            "total_frames": 111,
+            "kotlin_median_hz": null,
+            "praat_median_hz": null,
+            "median_abs_hz": null
+          },
+          {
+            "paired_frames": 111,
+            "total_frames": 111,
+            "kotlin_median_hz": 2512.1043529877484,
+            "praat_median_hz": 2512.2823099305183,
+            "median_abs_hz": 0.2864888341046026
+          }
+        ]
+      },
+      "intensity": {
+        "median_praat_minus_dbfs": 93.9768986979806,
+        "median_shape_residual_db": 0.0002891672388045663,
+        "correlation": null
+      },
+      "pulses": {
+        "kotlin_count": 211,
+        "praat_count": 215,
+        "median_nearest_praat_ms": 0.0133737893510677,
+        "p95_nearest_praat_ms": 0.014052348394466563,
+        "outside_praat_voicing": 0
+      }
+    }
+  }
+}

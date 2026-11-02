@@ -1,0 +1,4 @@
+# Preserve encodings/BOMs and quoted multiline label bytes across Windows checkouts.
+textgrid/*.TextGrid -text whitespace=-blank-at-eol
+# Desktop serializations keep trailing spaces; TSV empty labels require a final tab.
+textgrid/*.expected.tsv whitespace=-blank-at-eol

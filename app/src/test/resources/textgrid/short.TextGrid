@@ -1,0 +1,44 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+0.5
+2.5
+<exists>
+4
+"IntervalTier"
+"phonetics"
+0.5
+2.5
+3
+0.5
+1
+"He said: ""مرحبا"" [maɾħabaː]"
+1
+1.8
+"Vowel [iː] with combining diacritic é
+! inside label"
+1.8
+2.5
+""
+"IntervalTier"
+"words"
+0.5
+2.5
+1
+0.5
+2.5
+"كلمة"
+"TextTier"
+"notes"
+0.5
+2.5
+2
+0.8
+"Quote ""mark"" test"
+2
+"عربية"
+"TextTier"
+"empty points"
+0.5
+2.5
+0
